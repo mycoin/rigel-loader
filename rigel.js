@@ -202,15 +202,6 @@ var define, require;
         }
         return ref;
     };
-    exports.require.config = function(map) {
-        for (var key in map) {
-            if(key == 'root') {
-                rootPath = root;
-            } else {
-                depended[key] = map[key];
-            }
-        }
-    };
     /**
      * 加载模块 返回模块的引用
      * 如果不是在define函数中使用require 请使用callback参数或者将require语句放在单独的script标签中
@@ -239,5 +230,14 @@ var define, require;
         }
 
         return ref;
+    };
+    exports.require.config = function(map) {
+        for (var key in map) {
+            if(key == 'root') {
+                rootPath = root;
+            } else {
+                depended[key] = map[key];
+            }
+        }
     };
 })(this);

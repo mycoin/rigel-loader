@@ -3,7 +3,7 @@
  * Copyright 2012 Baidu Inc. All rights reserved.
  *
  * path:    rigel.js
- * desc:    新代理商前端框架
+ * desc:    简易模块加载器
  * author:  nqliujiangtao@gmail.com
  * date:    $Date$
  */

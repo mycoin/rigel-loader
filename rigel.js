@@ -234,7 +234,7 @@ var define, require;
     exports.require.config = function(map) {
         for (var key in map) {
             if(key == 'root') {
-                rootPath = [key];
+                rootPath = map[key];
             } else {
                 depended[key] = map[key];
             }
